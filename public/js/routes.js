@@ -33,10 +33,11 @@ appRoutes.config(['$routeProvider', '$locationProvider', '$sceDelegateProvider',
        }
     })
     .when('/my_videos/:id', {
-        templateUrl: './views/pages/edit_video.client.view.html',
-        resolve: {
-         loginRequired: loginRequired
-       }
+        templateUrl: './views/pages/edit_video.client.view.html'
+    //,
+//         resolve: {
+//          loginRequired: loginRequired
+//        }
     })
     .when('/logout', {
         template: null,
